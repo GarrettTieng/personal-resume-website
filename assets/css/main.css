@@ -250,6 +250,12 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
+	#contacts {
+		font-size: 14px;
+		line-height: 10%;
+		margin: 0 0 0 0;
+	}
+
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
 		font-family: Raleway, Helvetica, sans-serif;
@@ -265,6 +271,7 @@ input, select, textarea {
 			display: inline-block;
 			vertical-align: top;
 			font-size: 30px;
+			/* text-transform: none; */
 		} 
 		
 		h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -3086,11 +3093,11 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		-moz-transition: background-color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out;
-		background-color: rgba(53, 56, 73, 0.95);
+		-moz-transition: background-color 0.1s ease-out;
+		-webkit-transition: background-color 0.1s ease-out;
+		-ms-transition: background-color 0.1s ease-out;
+		transition: background-color 0.1s ease-out;
+		background-color: rgba(53, 56, 73, 1);
 		height: 3.5em;
 		left: 0;
 		line-height: 3.5em;
@@ -3102,10 +3109,10 @@ input, select, textarea {
 	}
 
 		#header h1 {
-			-moz-transition: opacity 0.2s ease-in-out, visibility 0.2s;
-			-webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s;
-			-ms-transition: opacity 0.2s ease-in-out, visibility 0.2s;
-			transition: opacity 0.2s ease-in-out, visibility 0.2s;
+			-moz-transition: opacity 0.1s ease-out, visibility 0.1s;
+			-webkit-transition: opacity 0.1s ease-out, visibility 0.1s;
+			-ms-transition: opacity 0.1s ease-out, visibility 0.1s;
+			transition: opacity 0.1s ease-out, visibility 0.1s;
 			border-bottom: 0;
 			font-size: 0.8em;
 			margin-bottom: 0;
