@@ -2879,7 +2879,8 @@ input, select, textarea {
 
 /* Button */
 
-	.resume-button{
+	.resume-button,
+	.resume-button-mobile{
 		-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, -moz-filter 0.25s ease;
 		-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease, -webkit-filter 0.25s ease;
 		-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease, -ms-filter 0.25s ease;
@@ -2897,7 +2898,10 @@ input, select, textarea {
 		-ms-filter: blur(0);
 		filter: blur(0);
 		opacity: 1;
-		
+
+	}
+
+	.resume-button{
 		position: absolute; 
 		right: 0;
 	}
@@ -2907,7 +2911,8 @@ input, select, textarea {
 	input[type="button"],
 	button,
 	.button,
-	.resume-button {
+	.resume-button,
+	.resume-button-mobile {
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
@@ -3231,11 +3236,10 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#header {
-				height: 2.75em;
-				line-height: 2.75em;
+				display: none;
 			}
 
-				#header nav {
+				/* #header nav {
 					top: 0;
 					right: 0;
 					height: inherit;
@@ -3255,7 +3259,7 @@ input, select, textarea {
 
 							#header nav a[href="#menu"]:hover, #header nav a[href="#menu"]:active {
 								background-color: inherit;
-							}
+							} */
 
 		}
 
@@ -3436,6 +3440,10 @@ input, select, textarea {
 		padding: 3.9em 0 4.75em 0 ;
 	}
 
+		.resume-button-mobile {
+			display: none;
+		}
+
 		#banner-header {
 			display: flex;
   			justify-content: left;
@@ -3571,6 +3579,14 @@ input, select, textarea {
 
 				#banner p {
 					font-size: 0.8em;
+				}
+
+				.resume-button {
+					display: none;
+				}
+
+				.resume-button-mobile{
+					display: block;
 				}
 
 		}
